@@ -1,6 +1,10 @@
+//write code here!!!
+//Function declaration to calculate salary
 function calculateSalary(){
+    //Prompt user to input their salry
     const salary = window.prompt("Please Enter Salary", );
     
+    //Declare variables that are to be used to calculate salary
     let PAYE;
     let grossSalary = salary;
     let personalRelief = 2400;
@@ -9,7 +13,7 @@ function calculateSalary(){
     const taxablePay = grossSalary - NSSF;
 
 
-
+//Calculate PAYE
     if(taxablePay >= 0 && taxablePay <= 24000){
         PAYE = ((taxablePay * 0.1) - personalRelief - insuranceRelief);
     }else if(taxablePay > 24000 && taxablePay <= 32333){
@@ -25,6 +29,8 @@ function calculateSalary(){
 if (PAYE < 0){
     PAYE = 0;
 }
+
+//calculate NHIF deductions
 
 if(grossSalary >= 0 && grossSalary <= 5999){
     NHIF = 150;
@@ -64,7 +70,7 @@ if(grossSalary >= 0 && grossSalary <= 5999){
     NHIF = "Enter a valid amount"
 }
 
-
+//calculate NSSF deductions 
 if(grossSalary > 0 && grossSalary <= 6000){
     NSSF = (grossSalary * 0.06);
 }else if(grossSalary > 6000 && grossSalary <= 18000){
@@ -76,12 +82,16 @@ if(grossSalary > 0 && grossSalary <= 6000){
 
 }
 
+//calculate net salary 
 netSalary = grossSalary - PAYE - NHIF - NSSF;
 
-
+//output the gross salry,NHIF,NSSF,PAYE and netsalary for user by alert
 alert(`This is your Gross Salary :ksh${grossSalary}`);
 alert(`This is your NHIF deduction :ksh ${NHIF}`);
 alert(`This is your NSSF deduction :ksh ${NSSF}`);
 alert(`This is your PAYE amount :ksh ${PAYE}`);
 alert(`This is your netSalary amount :ksh ${netSalary}`);
 }
+
+//End of function declaration
+//End of third challenge

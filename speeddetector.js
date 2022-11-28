@@ -1,3 +1,5 @@
+//Write code here !!!
+//function declaration for speed detection
 function need(){
     //initiate prompt for user to input data
     const speed = window.prompt("Enter speed", 70);
@@ -16,4 +18,7 @@ function need(){
 //alert the user of the results and consequences 
     
 }
+
+//End of function declaration
+//End of second challenge
     

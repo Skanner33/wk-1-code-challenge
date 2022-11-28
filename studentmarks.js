@@ -1,3 +1,5 @@
+//Write code here!!!
+//Function declaration for student grade generator
 function score(){
     //display a prompt for user to input marks
     const marks = window.prompt("Please Enter marks", 50);
@@ -19,3 +21,5 @@ function score(){
     //alert the user of the results
     }
     
+//End of function
+//End of first challenge
