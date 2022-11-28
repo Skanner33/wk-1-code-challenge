@@ -17,6 +17,10 @@ You can clone this project fron github:git@github.com/Skanner33/wk-1-code-challe
 Navigate into repository:
 wk-1-code-challenge
 
+OR
+
+Navigate into github-pages and run from there.
+
 # Author
 @Skanner33
 
