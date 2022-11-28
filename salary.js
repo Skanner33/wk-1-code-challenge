@@ -4,31 +4,15 @@ function calculateSalary(){
     //Prompt user to input their salry
     const salary = window.prompt("Please Enter Salary", );
     
-    //Declare variables that are to be used to calculate salary
+    //Asssign variables that are to be used to calculate salary
     let PAYE;
     let grossSalary = salary;
     let personalRelief = 2400;
     let NHIF, NSSF, netSalary;
-    const insuranceRelief = NHIF * 0.15;
-    const taxablePay = grossSalary - NSSF;
-
-
-//Calculate PAYE
-    if(taxablePay >= 0 && taxablePay <= 24000){
-        PAYE = ((taxablePay * 0.1) - personalRelief - insuranceRelief);
-    }else if(taxablePay > 24000 && taxablePay <= 32333){
-        PAYE = ((taxablePay-24000) * 0.25) + ((24000 * 0.1)) - personalRelief - insuranceRelief; 
-    }else if(taxablePay > 32333){
-        PAYE = ((24000 * 0.1) + (8333 * 0.25) + ((taxablePay - 32333) * 0.3) - personalRelief - insuranceRelief);
-    }else{
-        PAYE = "Enter a valid amount";
-    }
+    
 
 
 
-if (PAYE < 0){
-    PAYE = 0;
-}
 
 //calculate NHIF deductions
 
@@ -78,9 +62,29 @@ if(grossSalary > 0 && grossSalary <= 6000){
 }else if(grossSalary > 18000){
     NSSF = 1080;
 
-
-
 }
+
+//Assign the variables to be used 
+const insuranceRelief = NHIF * 0.15;
+const taxablePay = grossSalary - NSSF;
+
+//Calculate PAYE
+if(taxablePay >= 0 && taxablePay <= 24000){
+    PAYE = ((taxablePay * 0.1) - personalRelief - insuranceRelief);
+}else if(taxablePay > 24000 && taxablePay <= 32333){
+    PAYE = ((taxablePay-24000) * 0.25) + ((24000 * 0.1)) - personalRelief - insuranceRelief; 
+}else if(taxablePay > 32333){
+    PAYE = ((24000 * 0.1) + (8333 * 0.25) + ((taxablePay - 32333) * 0.3) - personalRelief - insuranceRelief);
+}else{
+    PAYE = "Enter a valid amount";
+}
+
+
+//Conditional statement for PAYE
+if (PAYE < 0){
+PAYE = 0;
+}
+
 
 //calculate net salary 
 netSalary = grossSalary - PAYE - NHIF - NSSF;
