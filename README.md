@@ -52,10 +52,18 @@ To use this repo on your machine requires some simple steps
 
 Running the application is very straight forward. You can use the following steps to run the app.
 
-- Run the application
+- First ensure you have installed the extension 'Live Server' in your Visual studio code.
 
-      npm start
+- On the bottom right part of your Visual Code you should be able to see a text written "Go Live".
 
+-It will automatically direct you to the browser where the code challenge is.
+
+-Click on either of the challenges and voila you can input the data you are prompted to.
+
+ # Alternative 2
+ -On the Environments section on your github(located on the right side of github), click on github-pages and it shoul direct you to 'Deployments/History.
+
+ -You should be able to see "view deployment" on the right hand side of this page.Click on that and it should direct you to the code challenges where you can click on any and input data as requested.
 # Authors
 This project was contributed to by:
 - [Mathew Mageto](https://github.com/Skanner/)
