@@ -87,7 +87,7 @@ PAYE = 0;
 
 
 //calculate net salary 
-netSalary = grossSalary - PAYE - NHIF - NSSF;
+netSalary = Math.floor(grossSalary - PAYE - NHIF - NSSF);
 
 //output the gross salry,NHIF,NSSF,PAYE and netsalary for user by alert
 alert(`This is your Gross Salary :ksh${grossSalary}`);
