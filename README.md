@@ -56,7 +56,9 @@ Running the application is very straight forward. You can use the following step
 
 - On the bottom right part of your Visual Code you should be able to see a text written "Go Live".
 
--It will automatically direct you to the browser where the code challenge is.
+-Select either of the JavaScript files you want to check.
+
+-It will automatically direct you to the browser where the code challenge is when clicked.
 
 -Click on either of the challenges and voila you can input the data you are prompted to.
 
