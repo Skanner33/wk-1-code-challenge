@@ -8,9 +8,9 @@ function need(){
     let demerit = (above / 5) * 1;
     
     //use if statements to determine various speed and the consequences
-        if (speed < 70){
+        if (speed < 71){
             alert('Ok')
-        }else if(speed >= 70 && speed <=130){
+        }else if(speed > 70 && speed < 130){
           alert  (demerit)
         }else if (speed >= 130){
             alert ('License suspended')

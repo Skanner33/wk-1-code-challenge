@@ -5,7 +5,7 @@ function score(){
     const marks = window.prompt("Please Enter marks", 50);
     
     //use if statement for different inputs and results
-        if (marks >= 79 && marks < 101){
+        if (marks > 79 && marks < 101){
             alert('You have scored an A')
         }else if(marks >= 60 && marks <= 79){
             alert('You have scored an B')
